@@ -17,4 +17,6 @@ app.get("/about", (req, res) => {
   res.sendFile("./views/about.html", { root: __dirname });
 });
 
+// Use Statics Files (CSS, Images, ETC...)
 app.use("/assets", express.static("assets"));
+app.use("/styles", express.static("styles"));

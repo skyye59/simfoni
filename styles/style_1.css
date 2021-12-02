@@ -1,0 +1,29 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+p,
+a {
+    font-family: 'Oxygen-700', sans-serif;
+    font-size: 1.1em;
+}
+
+.bg-holder {
+    position: absolute;
+    z-index: 1;
+}
+
+.bg-item {
+    width: 100vh;
+    height: 100vh;
+}
