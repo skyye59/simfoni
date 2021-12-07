@@ -25,40 +25,130 @@
 
 <body>
 
-    <!-- Navigation Section -->
-    <div class="top-nav">
-        <nav class="navbar navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="../assets/logo_scm.svg" alt="" width="50" height="50">
+    <div id="landing">
+        <!-- Navigation Section -->
+        <nav class="navbarnavbar-light fixed-top d-flex">
+            <div><img class="ml-2" src="../assets/logo_scm.svg" alt="" width="100" height="100"></div>
+            <div class="container top-nav">
+                <a class="navbar-brand fs-5 text-secondary" href="#">
+                    SIMFONI CAPITAL MANAGEMENT
                 </a>
                 <div class="wrapper">
-                    <a class="nav-link link-dark" aria-current="page" href="#">Home</a>
-                    <a class="nav-link link-dark" href="#">Lorem</a>
-                    <a class="nav-link link-dark" href="#">Ipsum</a>
-                    <a class="nav-link link-dark" href="#">Dolor</a>
-                    <a class="nav-link link-dark" href="#">Melit</a>
+                    <a class="nav-link link-secondary fs-6" aria-current="page" href="#">Home</a>
+                    <a class="nav-link link-secondary fs-6" href="#">Lorem</a>
+                    <a class="nav-link link-secondary fs-6" href="#">Ipsum</a>
+                    <a class="nav-link link-secondary fs-6" href="#">Dolor</a>
+                    <a class="nav-link link-secondary fs-6" href="#">Melit</a>
+                    <a class="nav-link link-secondary fs-6" href="#">Doris</a>
+                    <a class="nav-link link-secondary fs-6" href="#">Felis</a>
+                    <a class="nav-link link-secondary fs-6" href="#">Consol</a>
                 </div>
             </div>
         </nav>
-    </div>
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner" id="bg-holder">
-            <div class="carousel-item active">
-                <img src="../assets/bg_1.jpg" class="d-block bg-item" alt="...">
+
+        <!-- Carousel Section -->
+        <div class="parent">
+            <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active carousel-container">
+                        <img src="../assets/bg_1.jpg" class="carousel-img d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                            <h1 class="carousel-title fw-bold">EIS NOBIS SOLUTA DOLOREMQUE SUSCIPIT</h1>
+                            <p class="carousel-text fw-light fs-6">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. At
+                                expedita
+                                nostrum fuga, eaque
+                                eius nobis soluta doloremque suscipit perspiciatis eveniet eligendi exercitationem ullam
+                                vel provident consequuntur et laudantium consectetur dolor!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-container">
+                        <img src="../assets/bg_2.jpg" class="carousel-img d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                            <div>
+                                <h1 class="carousel-title fw-bold">LORE IPSUM DE SEMIT ADIPISICING</h1>
+                                <p class="carousel-text fw-light fs-6">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. At
+                                    expedita
+                                    nostrum fuga,
+                                    eaque eius nobis soluta doloremque suscipit perspiciatis eveniet eligendi
+                                    exercitationem ullam vel provident consequuntur et laudantium consectetur dolor!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-container">
+                        <img src="../assets/bg_3.jpg" class="carousel-img d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                            <div>
+                                <h1 class="carousel-title fw-bold">DOLOR DORIS MELIT FELIS</h1>
+                                <p class="carousel-text fw-light fs-6">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. At
+                                    expedita
+                                    nostrum fuga,
+                                    eaque eius nobis soluta doloremque suscipit perspiciatis eveniet eligendi
+                                    exercitationem ullam vel provident consequuntur et laudantium consectetur dolor!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="..." class="d-block bg-item" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="..." class="d-block bg-item" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="..." class="d-block bg-item" alt="...">
+
+            <!-- Regitration/Login Form -->
+            <div class="form-card">
+                <form class="form-wrapper">
+                    <div class="form-header">
+                        <h2 class="fw-bold text-secondary">Sign Up</h2>
+                    </div>
+                    <div class="form-input">
+                        <div class="box">
+                            <label for="dial" hidden>Dial</label>
+                            <input name="dial" type="text" placeholder="Dial">
+                        </div>
+                        <div class="box">
+                            <label for="fname" hidden></label>
+                            <input name="fname" type="text" placeholder="First Name">
+                        </div>
+                        <div class="box">
+                            <label for="lname" hidden>Dial</label>
+                            <input name="dial" type="text" placeholder="Last Name">
+                        </div>
+                        <div class="box">
+                            <label for="oname" hidden></label>
+                            <input class="" name="oname" type="text" placeholder="Organization Name">
+                        </div>
+                        <div class="box">
+                            <label for="email" hidden>Dial</label>
+                            <input name="email" type="text" placeholder="Email">
+                        </div>
+                        <div class="box">
+                            <label for="" hidden></label>
+                            <input name="phone-num" type="text" placeholder="Phone Number">
+                        </div>
+                    </div>
+                    <div class="d-grid justify-content-center mb-4 mt-4 p-0">
+                        <p>Already have an account?</p>
+                        <a href="#" class="text-success">Login</a>
+                    </div>
+                    <div class="form-footer bg-muted rounded-bottom">
+                        <p class="">Simfoni Capital Management — All Rights Reserved</p>
+                        <div class="wrapper d-flex justify-content-center">
+                            <small><a href="">Privacy Policy</a></small>
+                            <small><a href="">Terms of Services</a></small>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
 
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <!-- React.js Scripts -->
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
 </body>
 
 </html>
