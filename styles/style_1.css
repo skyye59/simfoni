@@ -34,10 +34,6 @@ nav {
 }
 
 /* Landing Page Navigation Bar */
-.wrapper {
-    display: flex;
-}
-
 .top-nav {
     display: flex;
     justify-content: space-between;
@@ -128,12 +124,6 @@ nav {
 .box {
     display: flex;
     justify-content: space-between;
-}
-
-.form-footer {
-    display: grid;
-    justify-content: center;
-    width: auto;
 }
 
 .box input {
