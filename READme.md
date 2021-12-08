@@ -1,8 +1,9 @@
-# Nothing to add as yet
-
-Everything is now being set up, for now clone the repo to your machine, you may want to also install node.js and Github client to your machine for the code to run natively
-
 ## Links
 
+### Software Links
 Node.js download: https://nodejs.org/en/
 Github client download: https://desktop.github.com/
+
+### Tutorials
+[Github Tutorial](https://www.youtube.com/watch?v=3RjQznt-8kE&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR)
+[Node.js Tutorial](https://www.youtube.com/watch?v=zb3Qk8SG5Ms&list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU)
