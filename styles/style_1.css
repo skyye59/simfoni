@@ -35,8 +35,6 @@ nav {
 
 /* Landing Page Navigation Bar */
 .top-nav {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 0 3em !important;
 }
@@ -95,6 +93,7 @@ nav {
 .form-card {
     position: absolute;
     width: 24rem;
+    height: auto;
     text-align: center;
     top: 18%;
     left: 61%;
