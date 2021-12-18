@@ -75,57 +75,57 @@
                 </div>
             </div>
 
-            <!-- Regitration/Login Form -->
-            <div class="form-card signup-form">
-                <form class="form-wrapper">
+            <!-- Regitration/Signup Form -->
+            <div class="form-card signup-div">
+                <form action="/signup" class="signup-form form-wrapper">
                     <div class="form-header">
                         <h2 class="fw-bold text-success fs-4 align-left">Sign Up</h2>
                     </div>
                     <div class="form-input">
                         <div class="box">
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Individual</option>
+                            <label for="dial" hidden></label>
+                            <select name="dial" class="form-select" aria-label="Default select example">
+                                <option selected value="Individual">Individual</option>
                                 <option value="Catalyst">Catalyst</option>
                                 <option value="Investor">Investor</option>
                             </select>
                         </div>
                         <div class="box">
-                            <label for="fname" hidden></label>
-                            <input name="fname" type="text" placeholder="Full Name">
+                            <label for="fullName" hidden></label>
+                            <input name="fullName" type="text" placeholder="Full Name">
                         </div>
                         <div class="box">
                             <label for="oname" hidden></label>
-                            <input class="" name="oname" type="text" placeholder="Organization Name">
+                            <input name="oname" type="text" placeholder="Organization Name (optional)">
                         </div>
                         <div class="box">
                             <label for="email" hidden></label>
                             <input name="email" type="email" placeholder="Email">
                         </div>
                         <div class="box">
-                            <label for="email" hidden></label>
-                            <input name="email" type="password" placeholder="Password">
+                            <label for="passsword" hidden></label>
+                            <input name="password" type="password" placeholder="Password">
                         </div>
                         <div class="box">
-                            <label for="" hidden></label>
-                            <input name="phone-num" type="tel" placeholder="+(Area Code)(Number)">
+                            <label for="phoneNum" hidden></label>
+                            <input name="phoneNum" type="tel" placeholder="Phonenumber (optional)">
                         </div>
-
-                        <button type="button" class="btn btn-success ">Sign up</button>
+                        <button class="btn btn-success">Sign up</button>
                     </div>
+
 
                     <div class="d-grid justify-content-center mt-4 p-0">
                         <p class="fs-6 text-muted">
                             Already have an account?
-                            <a href="#" class="text-success login-btn">Login</a>
+                            <a href="#login" class="text-success login-btn">Login</a>
                         </p>
-
                     </div>
                 </form>
             </div>
 
             <!-- Login Form -->
-            <div class="form-card login-form" hidden>
-                <form class="signup-form form-wrapper">
+            <div class="form-card login-div" hidden>
+                <form action="/login" class="login-form form-wrapper">
                     <div class="form-header">
                         <h2 class="fw-bold text-success fs-4 align-left">Login</h2>
                     </div>
@@ -135,16 +135,16 @@
                             <input name="email" type="email" placeholder="Email" required>
                         </div>
                         <div class="box">
-                            <label for="email" hidden></label>
-                            <input name="email" type="password" placeholder="Password" required>
+                            <label for="password" hidden></label>
+                            <input name="password" type="password" placeholder="Password" required>
                         </div>
-                        <button type="button" class="btn btn-success ">Login</button>
+                        <button class="btn btn-success">Login</button>
                     </div>
 
                     <div class="d-grid justify-content-center mt-4 p-0">
                         <p class="fs-6 text-muted">
                             Not yet registered?
-                            <a href="#" class="text-success signup-btn">Signup</a>
+                            <a href="#signup" class="text-success signup-btn">Sign up</a>
                         </p>
                     </div>
                 </form>
@@ -153,6 +153,9 @@
     </div>
 
     <%- include("./partials/footer.ejs"); %>
+
+    <script src="../scripts/webform.js"></script>
+
 </body>
 
 </html>
