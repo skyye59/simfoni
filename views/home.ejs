@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/header.ejs'); %>
+
+<body>
+
+  <!-- Primary Navigation -->
+  <div id="primary-nav">
+    <nav class="navbar navbar-expand-sm  bg-white">
+      <div class="container primary-nav d-flex ">
+        <div class="container">
+          <svg class="text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg" style="width: 60px">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+              d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z">
+            </path>
+          </svg>
+          <% if(user) { %>
+          <a class="navbar-brand fs-6 text-black" href="#"><%= user.fullName  %></a>
+          <% } %>
+        </div>
+      </div>
+      <div class="d-flex form-inputs">
+        <input class="form-control" type="text" placeholder="Search Here...">
+      </div>
+      <div class="container primary-nav d-flex">
+        <div class="d-flex">
+          <a class="nav-link link-danger fs-6 fw-semi" href="/">Logout</a>
+          <a class="nav-link link-secondary fs-6 fw-semi" href="#">Ipsum</a>
+          <a class="nav-link link-secondary fs-6 fw-semi" href="#">Dolor</a>
+          <a class="nav-link link-secondary fs-6 fw-semi" href="#">Velit</a>
+          <a class="nav-link link-secondary fs-6 fw-semi" href="#">Douis</a>
+          <a class="nav-link link-secondary fs-6 fw-semi" href="#">Magna</a>
+        </div>
+      </div>
+  </div>
+  </div>
+  </nav>
+
+  <hr class="nav">
+
+  <!-- Secondary Navigation -->
+  <div id="secondary-nav">
+    <nav class="navbar navbar-expand-sm bg-white">
+      <div class="box secondary-nav">
+        <div class="d-flex">
+          <a class="nav-link link-active fs-6 fw-semi" active href="#">Home</a>
+          <a class="nav-link link-secondary fs-6 fw-semi" href="#">Dosit</a>
+          <a class="nav-link link-secondary fs-6 fw-semi" href="#">Dolor</a>
+          <a class="nav-link link-secondary fs-6 fw-semi" href="#">Velit</a>
+          <a class="nav-link link-secondary fs-6 fw-semi" href="#">Posuit</a>
+          <a class="nav-link link-secondary fs-6 fw-semi" href="#">Jaque</a>
+        </div>
+      </div>
+  </div>
+  </nav>
+
+  <!-- Carousel -->
+
+  <!-- Feeds Section -->
+
+  <!-- 
+     (Aside Content) 
+
+      Primary Contacts 
+
+      Secondary Contacts -->
+
+  <!-- Chat Icon -->
+
+  <%- include('./partials/footer.ejs'); %>
+
+</body>
+
+</html>

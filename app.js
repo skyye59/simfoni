@@ -1,23 +1,30 @@
-import express from "express";
-import path from "path";
+const express = require("express");
+const mongoose = require("mongoose");
+const authRoutes = require("./routes/authRoutes");
+const cookieParser = require("cookie-parser");
+const { requireAuth, checkUser } = require("./middleware/authMiddleware");
 
-const __dirname = path.resolve();
-
+// Create the app
 const app = express();
 
-app.listen(3000);
+// Middleware
+app.use(express.static("public"));
+app.use(express.json());
+app.use(cookieParser());
 
-app.get("/", (req, res) => {
-  //   res.send("<h1>Hello, world</h1>");
-  res.sendFile("./views/index.html", { root: __dirname });
-});
+// Set the view engine for the app
+app.set("view engine", "ejs");
 
-app.get("/about", (req, res) => {
-  //   res.send("<h1>About, world</h1>");
-  res.sendFile("./views/about.html", { root: __dirname });
-});
+// Database connection
+const dbURI =
+  "mongodb+srv://admin:admin@simfonicluster.91e1d.mongodb.net/simfoniDB?retryWrites=true&w=majority";
+mongoose
+  .connect(dbURI)
+  .then((result) => app.listen(3000))
+  .catch((err) => console.log(err));
 
-// Use Statics Files (CSS, Images, ETC...)
-app.use("/assets", express.static("assets"));
-app.use("/styles", express.static("styles"));
-app.use("/scripts", express.static("scripts"));
+// routes
+app.get("*", checkUser);
+app.get("/", (req, res) => res.render("index"));
+app.get("/home", requireAuth, (req, res) => res.render("home"));
+app.use(authRoutes);

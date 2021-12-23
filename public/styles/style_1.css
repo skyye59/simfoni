@@ -1,8 +1,3 @@
-/* :root {
-    --secondary: white;
-} */
-
-
 h1,
 h2,
 h3,
@@ -35,8 +30,6 @@ nav {
 
 /* Landing Page Navigation Bar */
 .top-nav {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 0 3em !important;
 }
@@ -54,7 +47,7 @@ nav {
 
 .carousel-container {
     max-width: 100vw;
-    max-height: 100vh;
+    max-height: auto;
     background-color: black;
 }
 
@@ -75,7 +68,7 @@ nav {
     top: 25%;
     right: 52% !important;
     text-align: left !important;
-    padding: 0 0.85em;
+    padding: 0 1em;
 }
 
 .carousel-text {
@@ -95,6 +88,7 @@ nav {
 .form-card {
     position: absolute;
     width: 24rem;
+    height: auto;
     text-align: center;
     top: 18%;
     left: 61%;
@@ -131,4 +125,57 @@ nav {
     padding: 5px 10px;
     border: 1px solid #ced4da;
     border-radius: 8px;
+}
+
+/* Home Styles */
+
+:root {
+    --primary: #f2f2f2;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    background-color: var(--primary);
+}
+
+/* Userhomepage Navigation Bar */
+.primary-nav {
+    align-items: center;
+    padding: 0 7em !important;
+}
+
+.secondary-nav {
+    align-items: center;
+    padding: 0 8em !important;
+    height: 20px;
+}
+
+hr.nav {
+    border-top: 1px solid #acadad;
+    margin: 0 auto;
+}
+
+.form-inputs .form-control {
+    height: 30px;
+    width: 298px;
+}
+
+.about {
+    padding: 10px;
+}
+
+.about h1 {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.about h2 {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.about ul li+li {
+    margin-top: 10px;
 }
